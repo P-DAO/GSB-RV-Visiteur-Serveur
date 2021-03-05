@@ -11,7 +11,13 @@ app = Flask( __name__ )
 
 @app.route( '/visiteurs/<matricule>/<mdp>' , methods = [ 'GET' ] )
 def seConnecter( matricule , mdp ) :
+	
+	
+	#print '[' + matricule + '][' + mdp + ']'
+	
 	visiteur = modeleGSBRV.seConnecter( matricule , mdp )
+	
+	#print '[' + str(visiteur) + ']'
 	
 	if visiteur != None and len( visiteur ) != 0 :
 		reponse = make_response( json.dumps( visiteur ) )
