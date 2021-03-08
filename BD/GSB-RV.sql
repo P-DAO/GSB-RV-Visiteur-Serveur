@@ -282,12 +282,11 @@ CREATE TABLE RapportVisite (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO RapportVisite VALUES
-	( 'a131' , 1 , '2020-03-01' , 'RAS' , 22 ) ,
-	( 'a131' , 2 , '2020-04-02' , 'RAS' , 22 ) ,
-	( 'a131' , 3 , '2020-04-03' , 'RAS' , 18 ) ,
-	( 'a131' , 4 , '2020-05-10' , 'RAS' , 22 ) ,
-	( 'a131' , 5 , '2020-05-21' , 'RAS' , 18 ) ,
-	( 'a131' , 6 , '2020-01-02' , 'RAS' , 85 ) ;
+	( 'a131' , 1 , '2020-03-01' , 'RAS' , NULL, NULL, 0, 22, NULL ) ,
+	( 'a131' , 2 , '2020-04-02' , 'RAS' , NULL, NULL, 0,  22, NULL  ) ,
+	( 'a131' , 3 , '2020-04-03' , 'RAS' , NULL, NULL, 0,  18, NULL  ) ,
+	( 'a131' , 4 , '2020-05-10' , 'RAS' , NULL, NULL, 0,  22, NULL  ) ,
+	( 'a131' , 5 , '2020-05-21' , 'RAS' , NULL, NULL, 0,  18, NULL  ) ;
 
 
 CREATE TABLE Realiser (
